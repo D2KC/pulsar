@@ -1,2 +1,5 @@
 packages:
   - "."
+
+allowBuilds:
+  "terminal@https://codeload.github.com/pulsar-edit/terminal/tar.gz/558dc4c23230cbf0db314cdd1d426df00cb73448": true
