@@ -1,4 +1,9 @@
-const spellchecker = require('spellchecker');
+let spellchecker;
+try {
+    spellchecker = require('spellchecker');
+} catch (_) {
+    spellchecker = null;
+}
 const pathspec = require('./pathspec');
 const env = require('./checker-env');
 
@@ -91,6 +96,11 @@ class LocaleChecker {
     }
 
     deferredInit() {
+        if (!spellchecker) {
+            this.enabled = false;
+            this.reason = 'Native spellchecker is unavailable in this build.';
+            return;
+        }
         // If we already have a spellchecker, then we don't have to do anything.
         let path;
         if (this.spellchecker) {

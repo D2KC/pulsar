@@ -1,5 +1,10 @@
 let instance;
-const spellchecker = require('spellchecker');
+let spellchecker;
+try {
+    spellchecker = require('spellchecker');
+} catch (_) {
+    spellchecker = null;
+}
 const pathspec = require('./pathspec');
 const env = require('./checker-env');
 
@@ -7,7 +12,7 @@ let debug;
 
 // Initialize the global spell checker which can take some time. We also force
 // the use of the system or operating system library instead of Hunspell.
-if (env.isSystemSupported()) {
+if (spellchecker && env.isSystemSupported()) {
     instance = new spellchecker.Spellchecker();
     instance.setSpellcheckerType(spellchecker.ALWAYS_USE_SYSTEM);
 
