@@ -1,0 +1,8 @@
+{
+  "name": "notepad-mode",
+  "main": "./lib/main",
+  "version": "0.1.0",
+  "description": "A native rich-text Notepad tab for Pulsar.",
+  "engines": { "atom": ">=1.100.0 <2.0.0" },
+  "activationCommands": { "atom-workspace": ["notepad-mode:new", "notepad-mode:open"] }
+}

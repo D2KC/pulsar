@@ -1,0 +1,8 @@
+'menu': [
+  { 'label': 'Packages', 'submenu': [
+    { 'label': 'Notepad Mode', 'submenu': [
+      { 'label': 'New Rich Note (Ctrl+Alt+N)', 'command': 'notepad-mode:new' }
+      { 'label': 'Open Rich Note', 'command': 'notepad-mode:open' }
+    ] }
+  ] }
+]
