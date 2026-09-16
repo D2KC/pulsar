@@ -316,7 +316,7 @@
   "resolutions": {
     "node-abi": "3.63.0",
     "keytar": "7.9.0",
-    "nan": "2.19.0",
+    "nan": "^2.20.0",
     "ctags": "https://github.com/pulsar-edit/node-ctags.git#c32ca6017dd3f4ea314d53b044225505820abbe3",
     "es5-ext": "https://github.com/pulsar-edit/es5-ext#169f6ae9b2675675269a0ba265f83c29c7b56244",
     "@electron/remote": "2.1.2",
