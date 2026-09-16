@@ -1,6 +1,0 @@
-'menu': [
-  { 'label': 'File', 'submenu': [
-    { 'label': 'New Document', 'command': 'notepad-mode:new' }
-    { 'label': 'Open Rich Note', 'command': 'notepad-mode:open' }
-  ] }
-]

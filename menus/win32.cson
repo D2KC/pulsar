@@ -4,6 +4,7 @@
     submenu: [
       { label: 'New &Window', command: 'application:new-window' }
       { label: '&New File', command: 'application:new-file' }
+      { label: 'New Document', command: 'notepad-mode:new' }
       { label: '&Open File…', command: 'application:open-file' }
       { label: 'Open Folder…', command: 'application:open-folder' }
       { label: 'Add Project Folder…', command: 'application:add-project-folder' }
